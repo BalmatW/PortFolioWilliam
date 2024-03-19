@@ -1,0 +1,116 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+import ContactCTA from '../components/ContactCTA.astro';
+import Hero from '../components/Hero.astro';
+---
+
+<BaseLayout title="A propos | William Balmat" description="A propos de William Balmat">
+	<div class="stack gap-20">
+		<main class="wrapper about">
+			<Hero
+				title="A propos de moi"
+				tagline="Apercevez mon parcours ainsi que mes compétences."
+			>
+				<img
+					width="500"
+					height="873"
+					src="/assets/temple.JPG"
+					alt="Temple Japonais"
+				/>
+			</Hero>
+
+			<section>
+				<h2 class="section-title">Background</h2>
+				<div class="content">
+					<p>
+						Ne sachant pas quoi faire plus tard lorsque j'étais au lycée, j'ai décidé d'aller dans une filière informatique car j'adorais les jeux vidéos.
+					</p>
+					<p>
+						Le développement m'a permis de découvrir une nouvelle facette de l'informatique ainsi que du jeu vidéo.
+					</p>
+					<p>
+						De plus, lors de ces 2 années j'ai pû faire la connaissance de nouvelles personnes qui m'ont permis de découvrir l'univers de la crypto-monnaie.
+					</p>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">Diplômes et Travails</h2>
+				<div class="content">
+					<p>
+						BAC options Mathématiques et Sciences économiques et sociales.
+					</p>
+					<p>
+						J'ai effectué un job d'été au Pradet ou je devais nettoyer les plages.
+					</p>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">Skills</h2>
+				<div class="content">
+					<p>Curieux de découvrir, Travail d'équipe, Organisé, Dynamique</p>
+				</div>
+			</section>
+		</main>
+
+		<ContactCTA />
+	</div>
+</BaseLayout>
+
+<style>
+	.about {
+		display: flex;
+		flex-direction: column;
+		gap: 3.5rem;
+	}
+
+	img {
+		margin-top: 1.5rem;
+		border-radius: 1.5rem;
+		box-shadow: var(--shadow-md);
+	}
+
+	section {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		color: var(--gray-200);
+	}
+
+	.section-title {
+		grid-column-start: 1;
+		font-size: var(--text-xl);
+		color: var(--gray-0);
+	}
+
+	.content {
+		grid-column: 2 / 4;
+	}
+
+	.content :global(a) {
+		text-decoration: 1px solid underline transparent;
+		text-underline-offset: 0.25em;
+		transition: text-decoration-color var(--theme-transition);
+	}
+
+	.content :global(a:hover),
+	.content :global(a:focus) {
+		text-decoration-color: currentColor;
+	}
+
+	@media (min-width: 50em) {
+		.about {
+			display: grid;
+			grid-template-columns: 1fr 60% 1fr;
+		}
+
+		.about > :global(:first-child) {
+			grid-column-start: 2;
+		}
+
+		section {
+			display: contents;
+			font-size: var(--text-lg);
+		}
+	}
+</style>
