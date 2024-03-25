@@ -1,22 +1,35 @@
 ---
 import Icon from './Icon.astro';
+
 ---
+<script src="https://code.iconify.design/iconify-icon/2.0.0/iconify-icon.min.js"></script>
 
 <section class="box skills">
 	<div class="stack gap-2 lg:gap-4">
-		<Icon icon="terminal-window" color="var(--accent-regular)" size="2.5rem" gradient />
-		<h2>Du Backend et du Frontend</h2>
-		<p>J'ai pu découvrir durant ces 2 années ainsi que mes 2 stages différents langages comme PHP ou JavaScript.</p>
+		<h2>Langages :
+			<br>
+		<iconify-icon icon="devicon:html5" width="2.5rem" height="2.5rem"></iconify-icon> 
+		<iconify-icon icon="logos:css-3" width="3rem" height="3rem"></iconify-icon>
+		<iconify-icon icon="skill-icons:javascript" width="2.5rem" height="2.5rem"></iconify-icon>
+		<iconify-icon icon="logos:php" width="3rem" height="3rem"></iconify-icon>
+		<iconify-icon icon="devicon:csharp" width="2.5rem" height="2.5rem"></iconify-icon>
+		<iconify-icon icon="skill-icons:github-light" width="2.5rem" height="2.5rem"></iconify-icon>
+		</h2>
 	</div>
 	<div class="stack gap-2 lg:gap-4">
-		<Icon icon="trophy" color="var(--accent-regular)" size="2.5rem" gradient />
-		<h2>Les Jeux Vidéos</h2>
-		<p>Les jeux vidéos me passionnent depuis tout petit et j'adore connaître découvrir le développement d'un jeu en interne.</p>
+		<h2>Frameworks :
+			<br>
+			<iconify-icon icon="devicon:vuejs" width="2.5rem" height="2.5rem"></iconify-icon>
+			<iconify-icon icon="logos:laravel" width="2.5rem" height="2.5rem"></iconify-icon>
+			<iconify-icon icon="skill-icons:symfony-light" width="2.5rem" height="2.5rem"></iconify-icon>
+		</h2>
 	</div>
 	<div class="stack gap-2 lg:gap-4">
-		<Icon icon="strategy" color="var(--accent-regular)" size="2.5rem" gradient />
-		<h2>Les Mangas</h2>
-		<p>J'ai toujours été bercé par les mangas que ce soient par des anciens ou des plus récents. De plus les mangas peuvent nous montrer de belles leçons de vie.</p>
+		<h2>Base de donnée :
+			<br>
+			<iconify-icon icon="logos:mysql" width="3.5rem" height="3.5rem"></iconify-icon>
+			<iconify-icon icon="logos:mariadb-icon" width="3.5rem" height="3.5rem"></iconify-icon>
+		</h2>
 	</div>
 </section>
 
