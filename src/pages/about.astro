@@ -9,53 +9,19 @@ import Hero from '../components/Hero.astro';
 	<div class="stack gap-20">
 		<main class="wrapper about">
 			<Hero
-				title="A propos de moi"
-				tagline="Apercevez mon parcours ainsi que mes compétences."
+				title="Mon parcours à travers mon CV"
 			>
+			<div class="image-container">
 				<img
-					width="500"
-					height="873"
-					src="/assets/temple.JPG"
-					alt="Temple Japonais"
+					width="750"
+					height="100"
+					src="/assets/cv.jpg"
+					alt="CV"
+					class="centered-image"
 				/>
+			</div>
 			</Hero>
-
-			<section>
-				<h2 class="section-title">Découvrir</h2>
-				<div class="content">
-					<p>
-						Lycéen et indécis sur le choix de mon orientation, j'ai décidé d'aller dans une filière informatique car j'adorais les nouvelles technologies et les jeux vidéos.
-					</p>
-					<p>
-						Le développement m'a permis de découvrir une nouvelle facette de l'informatique ainsi que du jeu vidéo.
-					</p>
-					<p>
-						J'ai également, lors de ces 2 années, fait de belles rencontres et découvert l'univers de la crypto-monnaie.
-					</p>
-				</div>
-			</section>
-			<section>
-				<h2 class="section-title">Diplômes et Travails</h2>
-				<div class="content">
-					<p>
-						BAC options Mathématiques et Sciences économiques et sociales.
-					</p>
-					<p>
-						J'ai effectué un job d'été à la mairie du Pradet.
-					</p>
-					<p>
-						Dans le cadre de mon BTS SIO j'ai beaucoup appris lors de mes 2 stages en entreprise chez TPM.
-					</p>
-				</div>
-			</section>
-			<section>
-				<h2 class="section-title">Skills</h2>
-				<div class="content">
-					<p>Curieux de découvrir, Travail d'équipe, Organisé, Dynamique</p>
-				</div>
-			</section>
 		</main>
-
 		<ContactCTA />
 	</div>
 </BaseLayout>
