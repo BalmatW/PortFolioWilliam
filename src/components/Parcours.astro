@@ -1,0 +1,120 @@
+---
+import Icon from './Icon.astro';
+
+---
+
+<section class="box skills">
+    <h2>Mon parcours :</h2>
+    <ul class="timeline">
+        <li class="purple">
+            <div class="content">
+                <h3>Stage 2ème année BTS SIO</h3>
+                <p>Poste : Développeur</p>
+                <p>Entreprise : Métropole Toulon Provence Méditerranée</p>
+            </div>
+        </li>
+        <li class="blue">
+            <div class="content">
+                <h3>Stage 1ère année BTS SIO</h3>
+                <p>Poste : Développeur</p>
+                <p>Entreprise : Métropole Toulon Provence Méditerranée</p>
+            </div>
+        </li>
+    </ul>
+    <ul class="timeline">
+        <li class="green">
+            <div class="content">
+                <h3>Job d'été en juillet 2022</h3>
+                <p>Poste : Entretien des plages de ma commune</p>
+                <p>Entreprise : Mairie du Pradet</p>
+            </div>
+        </li>
+        <li class="orange">
+            <div class="content">
+                <h3>Obtention du Bac en 2022</h3>
+                <p>Options : Mathématiques et Sciences Économiques et Sociales</p>
+                <p>Lieu : Lycée Dumont d'Urville</p>
+            </div>
+        </li>
+    </ul>
+</section>
+
+
+
+
+<style>
+    .box.skills {
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .timeline {
+        list-style: none;
+        padding: 0;
+    }
+
+    .timeline li {
+    display: inline-block;
+    margin-right: 20px; /* Espacement entre les éléments */
+    background-color: transparent; /* Réinitialiser la couleur de fond */
+    padding: 10px; /* Ajouter un peu d'espace autour du contenu */
+    }
+    
+    .timeline li .content {
+        background-color: #f9f9f9;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        flex: 1;
+    }
+
+    .timeline li .content h3 {
+        margin-top: 0;
+        color: #2b2b2b;
+    }
+
+    .timeline li .content p {
+        margin: 5px 0;
+        color: #000000;
+    }
+
+	.box {
+		border: 1px solid var(--gray-800);
+		border-radius: 0.75rem;
+		padding: 1.5rem;
+		background-color: var(--gray-999_40);
+		box-shadow: var(--shadow-sm);
+	}
+
+	.skills {
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+	}
+
+	.skills h2 {
+		font-size: var(--text-lg);
+	}
+
+	.skills p {
+		color: var(--gray-400);
+	}
+
+	@media (min-width: 50em) {
+		.box {
+			border-radius: 1.5rem;
+			padding: 2.5rem;
+		}
+
+		.skills {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 5rem;
+		}
+
+		.skills h2 {
+			font-size: var(--text-2xl);
+		}
+	}
+</style>
