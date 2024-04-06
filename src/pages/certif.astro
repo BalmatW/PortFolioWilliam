@@ -1,0 +1,122 @@
+---
+import { getCollection } from 'astro:content';
+
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+import ContactCTA from '../components/ContactCTA.astro';
+import Hero from '../components/Hero.astro';
+
+---
+
+<BaseLayout
+	title="Mes certifications"
+	description="Découvrez les certifications que j'ai réalisé."
+>
+	<div class="stack gap-20">
+		<main class="wrapper stack gap-8">
+			<Hero
+				title="Mes certifications"
+				tagline="Découvrez les certifications que j'ai réalisé."
+				align="start"
+			/>
+            <div class="image-container">
+                <div class="image-pair">
+                    <h3>Cisco Networking Essentials : 
+                        <img src="/assets/certif/cisco.png" alt="cisco" class="certif-image">
+                    </h3>
+                    <h3>Mooc ANNSI :
+                    <img src="/assets/certif/mooc.png" alt="mooc" class="certif-image">
+                    </h3>
+                </div>
+                <div class="image-pair">
+                    <h3>Pix :
+                    <img src="/assets/certif/pix.png" alt="pix" class="certif-image">
+                    </h3>
+                    <h3>Atelier RGPD :
+                    <img src="/assets/certif/rgpd.png" alt="rgpd" class="certif-image">
+                    </h3>
+                </div>
+            </div>
+		</main>
+		<ContactCTA />
+	</div>
+</BaseLayout>
+
+<style>
+	.about {
+		display: flex;
+		flex-direction: column;
+		gap: 3.5rem;
+	}
+
+    h3 {
+        color: #01ccff;
+    }
+
+    .image-container {
+        margin-bottom: 20px; /* Espacement entre les paires d'images */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px; /* Réduction de la marge entre les paires d'images */
+    }
+
+    .image-pair {
+        box-sizing: border-box; /* Inclut la bordure et le padding dans la largeur */
+        padding: 10px; /* Espacement entre les paires d'images */
+    }
+
+    .certif-image {
+        width: 100%; /* Ajustement de la largeur des images */
+        display: block; /* Permet de supprimer l'espacement entre les images */
+        margin-bottom: 5px; /* Espacement entre les images */
+    }
+
+	img {
+		margin-top: 1.5rem;
+		border-radius: 1.5rem;
+	}
+
+	section {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		color: var(--gray-200);
+	}
+
+	.section-title {
+		grid-column-start: 1;
+		font-size: var(--text-xl);
+		color: var(--gray-0);
+	}
+
+	.content {
+		grid-column: 2 / 4;
+	}
+
+	.content :global(a) {
+		text-decoration: 1px solid underline transparent;
+		text-underline-offset: 0.25em;
+		transition: text-decoration-color var(--theme-transition);
+	}
+
+	.content :global(a:hover),
+	.content :global(a:focus) {
+		text-decoration-color: currentColor;
+	}
+
+	@media (min-width: 50em) {
+		.about {
+			display: grid;
+			grid-template-columns: 1fr 60% 1fr;
+		}
+
+		.about > :global(:first-child) {
+			grid-column-start: 2;
+		}
+
+		section {
+			display: contents;
+			font-size: var(--text-lg);
+		}
+	}
+</style>

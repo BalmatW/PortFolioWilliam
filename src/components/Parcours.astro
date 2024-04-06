@@ -8,14 +8,14 @@ import Icon from './Icon.astro';
     <ul class="timeline">
         <li class="purple">
             <div class="content">
-                <h3>Stage 2ème année BTS SIO</h3>
+                <h2>Stage 2ème année BTS SIO</h2>
                 <p>Poste : Développeur</p>
                 <p>Entreprise : Métropole Toulon Provence Méditerranée</p>
             </div>
         </li>
         <li class="blue">
             <div class="content">
-                <h3>Stage 1ère année BTS SIO</h3>
+                <h2>Stage 1ère année BTS SIO</h2>
                 <p>Poste : Développeur</p>
                 <p>Entreprise : Métropole Toulon Provence Méditerranée</p>
             </div>
@@ -24,14 +24,15 @@ import Icon from './Icon.astro';
     <ul class="timeline">
         <li class="green">
             <div class="content">
-                <h3>Job d'été en juillet 2022</h3>
+                <h2>Job d'été</h2>
+                <h2>Juillet 2022</h2>
                 <p>Poste : Entretien des plages de ma commune</p>
                 <p>Entreprise : Mairie du Pradet</p>
             </div>
         </li>
         <li class="orange">
             <div class="content">
-                <h3>Obtention du Bac en 2022</h3>
+                <h2>Bac général 2022</h2>
                 <p>Options : Mathématiques et Sciences Économiques et Sociales</p>
                 <p>Lieu : Lycée Dumont d'Urville</p>
             </div>
@@ -44,9 +45,11 @@ import Icon from './Icon.astro';
 
 <style>
     .box.skills {
-        padding: 20px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
+        border: 1px solid var(--gray-800);
+		border-radius: 0.75rem;
+		padding: 1.5rem;
+		background-color: var(--gray-999_40);
+		box-shadow: var(--shadow-sm);
     }
 
     .timeline {
@@ -62,16 +65,16 @@ import Icon from './Icon.astro';
     }
     
     .timeline li .content {
-        background-color: #f9f9f9;
+        background-color: #f293ff;
         padding: 15px;
         border-radius: 5px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         flex: 1;
     }
 
-    .timeline li .content h3 {
+    .timeline li .content h2 {
         margin-top: 0;
-        color: #2b2b2b;
+        color: #552424;
     }
 
     .timeline li .content p {

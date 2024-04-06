@@ -11,7 +11,7 @@ import Hero from "../components/Hero.astro";
 >
 	<div class="stack gap-20">
 		<main class="wrapper about">
-			<Hero title="Mon parcours et voyage">
+			<Hero title="Curriculum vitæ">
 				<div class="image-container">
 					<img
 						width="750"
@@ -22,38 +22,6 @@ import Hero from "../components/Hero.astro";
 						id="displayedImage"
 					/>
 				</div>
-				<button onclick="previousImage()">Précédent</button>
-				<button onclick="nextImage()">Suivant</button>
-
-				<script>
-					document.addEventListener("DOMContentLoaded", function () {
-						const images = [
-							"/assets/cv.jpg",
-							"/assets/temple.JPG",
-							// Ajoutez ici les chemins vers vos autres images
-						];
-						let currentImageIndex = 0;
-						const displayedImage = document.getElementById(
-							"displayedImage",
-						) as HTMLImageElement;
-
-						function nextImage() {
-							currentImageIndex++;
-							if (currentImageIndex >= images.length) {
-								currentImageIndex = 0;
-							}
-							displayedImage.src = images[currentImageIndex];
-						}
-
-						function previousImage() {
-							currentImageIndex--;
-							if (currentImageIndex < 0) {
-								currentImageIndex = images.length - 1;
-							}
-							displayedImage.src = images[currentImageIndex];
-						}
-					});
-				</script>
 			</Hero>
 		</main>
 		<ContactCTA />
