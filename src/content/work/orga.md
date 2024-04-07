@@ -13,7 +13,7 @@ tags:
   - GIT
 ---
 
-### A propos ce cette application
+### A propos de cette application
 
 Nous devions refaire un organigramme de la Métropole Toulon Provence Méditerranée en prenant en compte la hiérarchie de la métropole.
 

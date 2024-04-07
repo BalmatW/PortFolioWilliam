@@ -13,7 +13,7 @@ tags:
   - GIT
 ---
 
-### A propos ce cette application
+### A propos de cette application
 
 Ce site existait déjà mais nous devons le refaire car la licence du site va devenir payante (Power Apps Microsoft).  Ducoup notre objectif était de refaire ce site en PHP/JS (Laravel/VueJS) tout en conservant la structure du site.
 

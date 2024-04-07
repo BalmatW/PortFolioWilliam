@@ -12,7 +12,7 @@ tags:
   - CSS
   - GIT
 ---
-### A propos ce cette application
+### A propos de cette application
 
 Le laboratoire GSB (Galaxy Swiss Bourdin) est une industrie pharmaceutique spécialisée dans la recherche et production de nouvelles molécules et médicaments révolutionnaires.
 

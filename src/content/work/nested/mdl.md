@@ -12,4 +12,4 @@ tags:
   - GIT
 ---
 
-### A propos ce cette application
+### A propos de cette application
